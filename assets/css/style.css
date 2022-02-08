@@ -4,3 +4,77 @@
     box-sizing: border-box;
 }
 
+header {
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: darkmagenta;
+    color: aqua;
+
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header nav {
+    margin-right: 20px;
+    padding-top: 15px;
+    
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+header nav ul li a {
+    padding: 10px 10px;
+    text-decoration: none;
+    color: aqua;
+}
+
+.hero {
+    color: aqua;
+    font-weight: bold;
+    padding: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../images/retrowave background.png");
+    background-size: cover;
+    background-position: 100%;
+}
+
+.hero-img img {
+    max-height: 300px;
+}
+
+.content h2 {
+    font-size: 30px;
+    min-width: 250px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    margin: 25px;
+    border-right: 1px solid black;
+    text-align: right;
+    
+}
+
+.about-me, .portfolio, .contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+
+.about-me p {
+
+    font-size: 20px;
+
+}
+
