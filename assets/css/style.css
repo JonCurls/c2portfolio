@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-image: url(../images/planks.jpg); */
+    /*background-image: url(../images/planks.jpg); */
+    
+}
+
+body {
+    background-color: rgba(15, 7, 7, 0.466);
 }
 
 /* header */
-header {
+header, footer {
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
@@ -16,10 +21,12 @@ header {
 }
 header h1 {
     font-size: 40px;
+    
 }
 header nav {
     margin-right: 20px;
     padding-top: 15px;
+    
 }
 header nav ul {
     list-style: none;
@@ -42,6 +49,7 @@ header nav ul li a {
     background-image: url("../images/woodtop.jpg");
     background-size: cover;
     background-position: 80% 80%;
+    
 }
 
 .hero-img img {
@@ -59,7 +67,7 @@ header nav ul li a {
     
 }
 
-.about-me, .portfolio, .contact-me {
+.about-me, .portfolio {
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0 0 20px;
@@ -67,7 +75,37 @@ header nav ul li a {
     align-items: center;
     width: 95%;
     margin: 50px 0;
+    
+    
+    
 }
+
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;  
+      
+}
+
+.contact-me img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.contact-me ul {
+    display: none;
+    margin: 10px;
+}
+
+.contact-me:hover ul {
+    display: block;
+}
+
+
 
 .about-me p {
 
@@ -83,4 +121,10 @@ header nav ul li a {
 .project-gal img {
     max-width: 100px;
     max-height: 100px;
+}
+
+.footer h4{
+    margin: auto;
+    width: 50%;
+    text-align: center;
 }
