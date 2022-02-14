@@ -7,21 +7,22 @@
 }
 
 body {
+    
     background-color: rgba(15, 7, 7, 0.466);
 }
 
 /* header */
 header, footer {
-    padding: 25px;
+    margin-right: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #5a3300;
     color: whitesmoke;
+    width: 100%;
 }
 header h1 {
     font-size: 40px;
-    
 }
 header nav {
     margin-right: 20px;
@@ -49,22 +50,20 @@ header nav ul li a {
     background-image: url("../images/woodtop.jpg");
     background-size: cover;
     background-position: 80% 80%;
-    
 }
 
 .hero-img img {
     max-height: 300px;
 }
 
-.content h2 {
+.content p {
     font-size: 30px;
     min-width: 250px;
     padding-right: 15px;
     padding-bottom: 25px;
     margin: 25px;
-    border-right: 1px solid black;
-    text-align: right;
-    
+    text-align: end;
+    flex: 2;
 }
 
 .about-me {
@@ -78,37 +77,38 @@ header nav ul li a {
     
 }
 
-.about-me p {
-    flex: 2;
-    text-align: end;
-}
 
 .portfolio {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 25px;
+    margin: 50px 50px 100px 10px;
+    padding: 10px 0 0 20px;
     flex: 1;
 }
 
 .project1 {
+    display: flex;
     justify-content: center;
-    margin-left: 200px;
+    align-items: center;
+    flex: 100%;
 }
 
 .gallery {
     display: flex;
     flex-wrap:wrap;
-    justify-content: flex-end;
+    justify-content: center;
     flex: 2;
+}
+.gallery img {
+    border: 1px solid black;
 }
 
 
-.sign img {
+.sign {
     max-width: 200px;
     max-height: 200px;
     margin-right: 100px;
-    flex: 1;
 }
 
 .contact-me {
@@ -141,25 +141,82 @@ header nav ul li a {
 }
 
 .project1 img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.project-gal img {
+    min-width: 200px;
+    min-height: 200px;
     max-width: 200px;
     max-height: 200px;
 }
 
-.project-gal img {
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 100px;
-    max-height: 100px;
-
-}
-
 /* footer */
-.footer h5 {
+footer h5 {
     text-decoration: none;
     color: whitesmoke;
 }
-.footer h4{
+footer h4{
     margin: auto;
     width: 50%;
     text-align: center;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width:768px) {
+    header, footer {
+    padding-bottom: 0;
+    justify-content: center;
+    width: 100%;
+    }
+    header h1 {
+    width: 100%;
+    text-align: center;
+    }
+    header nav ul {
+    width: 100%;
+    justify-content: center;
+    }
+    .hero {
+    justify-content: center;
+    }
+    .about-me {
+    justify-content: center;
+    align-items: center;
+    flex: 1 100%;
+    }
+    .about-me p {
+    width: 100%;
+    text-align: center;
+    flex: 2 100%;
+    }
+    .portfolio {
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    }
+    .project1 {
+        flex: 100%;
+        justify-content: center;
+    }
+    .gallery {
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    .about-me p {
+    font-weight: bold;
+    font-size: 35px;
+    }
+    .portfolio {
+        justify-content: center;
+        align-items: center;
+    }
+
 }
