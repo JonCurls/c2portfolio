@@ -1,17 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    /*background-image: url(../images/planks.jpg); */
-    
+    box-sizing: border-box;    
 }
 
 body {
-    
-    background-color: rgba(15, 7, 7, 0.466);
+    background-color: #96846c;
 }
 
-/* header */
+/* HEADER + FOOTER */
 header, footer {
     margin-right: 20px;
     display: flex;
@@ -27,7 +24,6 @@ header h1 {
 header nav {
     margin-right: 20px;
     padding-top: 15px;
-    
 }
 header nav ul {
     list-style: none;
@@ -40,119 +36,6 @@ header nav ul li a {
     color: whitesmoke;
     font-size: 20px;
 }
-
-.hero {
-    color: whitesmoke;
-    font-weight: bold;
-    padding: 0 100px;
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url("../images/woodtop.jpg");
-    background-size: cover;
-    background-position: 80% 80%;
-}
-
-.hero-img img {
-    max-height: 300px;
-}
-
-.content p {
-    font-size: 30px;
-    min-width: 250px;
-    padding-right: 15px;
-    padding-bottom: 25px;
-    margin: 25px;
-    text-align: end;
-    flex: 2;
-}
-
-.about-me {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px 0 0 20px;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px 50px 100px 10px;
-    flex: 1;
-    
-}
-
-
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 50px 50px 100px 10px;
-    padding: 10px 0 0 20px;
-    flex: 1;
-}
-
-.project1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 100%;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    flex: 2;
-}
-.gallery img {
-    border: 1px solid black;
-}
-
-
-.sign {
-    max-width: 200px;
-    max-height: 200px;
-    margin-right: 100px;
-}
-
-.contact-me {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 10px;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;  
-}
-
-.contact-me img {
-    max-width: 100px;
-    max-height: 100px;
-}
-
-.contact-me ul {
-    display: none;
-    margin: 10px;
-}
-
-.contact-me:hover ul {
-    display: block;
-}
-
-
-.about-me p {
-    font-size: 20px;
-}
-
-.project1 img {
-    max-width: 300px;
-    max-height: 300px;
-}
-
-.project-gal img {
-    min-width: 200px;
-    min-height: 200px;
-    max-width: 200px;
-    max-height: 200px;
-}
-
-/* footer */
 footer h5 {
     text-decoration: none;
     color: whitesmoke;
@@ -163,7 +46,122 @@ footer h4{
     text-align: center;
 }
 
-/* MEDIA QUERY */
+/* HERO SECTION */
+.hero {
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../images/woodtop.jpg");
+    background-size: cover;
+    background-position: 80% 80%;
+}
+.hero-img img {
+    max-height: 300px;
+}
+
+/* SECTION SIGN */
+.sign {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/* ABOUT ME SECTION */
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 50px 100px 10px;
+    flex: 1;
+}
+.about-me p {
+    font-size: 20px;
+    min-width: 250px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    margin-left: 80px;
+    text-align: end;
+    flex: 2;
+}
+
+/* PORTFOLIO SECTION */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 50px 100px 10px;
+    padding: 10px 0 0 20px;
+    flex: 1;
+}
+.project1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 100%;
+    position: relative;
+}
+.project1 img {
+    max-width: 300px;
+    max-height: 300px;
+}
+.runbuddy, .project-gal {
+    position: relative;
+}
+.gallery .overlay, .runbuddy .overlaybuddy, .project-gal .overlaygal {
+    position: absolute;
+    bottom: 0;
+    font-weight: bold;
+    text-align: right;
+    font-size: 20px;
+    background-color: gray;
+}
+.gallery {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    flex: 2;
+}
+.gallery img {
+    border: 2px solid black;
+}
+.project-gal img {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/* CONTACT ME SECTION */
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;  
+}
+.contact-me img {
+    max-width: 100px;
+    max-height: 100px;
+}
+.contact-me ul {
+    display: none;
+    margin: 10px;
+}
+.contact-me ul a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.contact-me:hover ul {
+    display: block;
+}
+
+/* MEDIA QUERY FOR TABLETS */
 @media screen and (max-width:768px) {
     header, footer {
     padding-bottom: 0;
@@ -174,49 +172,44 @@ footer h4{
     width: 100%;
     text-align: center;
     }
-    header nav ul {
-    width: 100%;
-    justify-content: center;
-    }
-    .hero {
-    justify-content: center;
-    }
-    .about-me {
+    .hero,.about-me {
     justify-content: center;
     align-items: center;
-    flex: 1 100%;
     }
     .about-me p {
     width: 100%;
     text-align: center;
     flex: 2 100%;
+    margin: auto;
+    padding-top: 25px;
     }
     .portfolio {
     justify-content: center;
     align-items: center;
     margin-left: 150px;
     }
-    .project1 {
-        flex: 100%;
-        justify-content: center;
-    }
     .gallery {
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-    
+    margin-right: 148px;
+    }
+    .sign {
+        margin-right: 150px;
+    }
+    .about-me .sign {
+        margin: auto;
     }
 }
 
+/* MEDIA QUERY FOR MOBILE */
 @media screen and (max-width:575px) {
-
     .about-me p {
     font-weight: bold;
-    font-size: 35px;
+    font-size: 30px;
     }
     .portfolio {
         justify-content: center;
         align-items: center;
     }
-
 }
